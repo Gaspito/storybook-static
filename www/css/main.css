@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    --color-primary: #4a90e2;
+    --color-secondary: #50e3c2;
+    --color-accent: #f5a623;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #fefefe;
+    color: #222;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px #00000020;
+    z-index: 100;
+    padding: 0 1rem;
+}
+
+
+.navbar-breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+}
+
+.navbar-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.navbar-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-wrap: nowrap;
+}
+
+.main-content {
+    margin-top: 60px; /* Space for the fixed navbar */
+    padding: 1rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(100vh - 60px - 60px - 2rem);
+}
+
+
+.footer {
+    background: linear-gradient(to bottom, #eee 0px, #fefefe 10px, #fefefe 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 0 1rem;
+}
+
+
+.btn {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: #ddd;
+    color: #222;
+    border: 1pt solid #aaa;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.btn:active {
+    background-color: #aaa;
+    outline: 1pt solid #222;
+}
+
+.btn:disabled {
+    background-color: #eee;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.btn:focus {
+    outline: 2pt solid #222;
+    outline-offset: -1pt;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: 1pt solid var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: color-mix(in srgb, var(--color-primary) 80%, #ccc 20%);
+}
