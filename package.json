@@ -1,0 +1,25 @@
+{
+  "name": "storybook-static",
+  "version": "1.0.0",
+  "description": "A static website version of my Book Adventure Editor application made in .NET. This version focuses on showcasing the functionalities while staying completely web based and static.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaspito/storybook-static.git"
+  },
+  "author": "Gaspard Dauvillier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaspito/storybook-static/issues"
+  },
+  "homepage": "https://github.com/Gaspito/storybook-static#readme",
+  "dependencies": {
+    "vite": "^6.3.5"
+  }
+}
